@@ -531,4 +531,5 @@ vim.cmd("set listchars=tab:!·,trail:·,space:.")
 vim.cmd("set list")
 vim.o.relativenumber = true
 vim.o.clipboard = "unnamedplus"
+vim.o.smartcase = true
 
