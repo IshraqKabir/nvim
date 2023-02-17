@@ -22,11 +22,11 @@ local options = {
 	updatetime = 300, -- faster completion (4000ms default)
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 	expandtab = true, -- convert tabs to spaces
-	shiftwidth = 2, -- the number of spaces inserted for each indentation
-	tabstop = 2, -- insert 2 spaces for a tab
+	shiftwidth = 4, -- the number of spaces inserted for each indentation
+	tabstop = 4, -- insert 2 spaces for a tab
 	cursorline = true, -- highlight the current line
 	number = true, -- set numbered lines
-	relativenumber = false, -- set relative numbered lines
+	relativenumber = true, -- set relative numbered lines
 	numberwidth = 4, -- set number column width to 2 {default 4}
 
 	signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
@@ -36,6 +36,7 @@ local options = {
 	sidescrolloff = 8, -- minimal number of screen columns either side of cursor if wrap is `false`
 	guifont = "monospace:h17", -- the font used in graphical neovim applications
 	whichwrap = "bs<>[]hl", -- which "horizontal" keys are allowed to travel to prev/next line
+    background = "light"
 }
 
 for k, v in pairs(options) do
@@ -51,6 +52,6 @@ vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- separate vim plugins fr
 vim.cmd([[ set nowrap ]])
 
 -- set cursor color
-vim.cmd([[ hi Cursor guifg=lightblue guibg=lightblue ]])
+vim.cmd([[ hi Cursor guifg=blue guibg=blue ]])
 vim.cmd([[ hi Cursor2 guifg=red guibg=red ]])
 vim.cmd([[ set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50 ]])
