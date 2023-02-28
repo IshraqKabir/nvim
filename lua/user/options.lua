@@ -55,3 +55,7 @@ vim.cmd([[ set nowrap ]])
 vim.cmd([[ hi Cursor guifg=blue guibg=blue ]])
 vim.cmd([[ hi Cursor2 guifg=red guibg=red ]])
 vim.cmd([[ set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50 ]])
+
+vim.cmd([[ set list ]])
+vim.cmd([[ set listchars=tab:>. ]])
+
