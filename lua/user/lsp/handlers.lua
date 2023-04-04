@@ -73,6 +73,7 @@ end
 
 M.on_attach = function(client, bufnr)
 	if client.name == "tsserver" then
+		require("twoslash-queries").attach(client, bufnr)
 		client.server_capabilities.documentFormattingProvider = false
 	end
 
