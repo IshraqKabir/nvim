@@ -128,6 +128,9 @@ return packer.startup(function(use)
 	-- catppuccin
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
+	-- Dark Notify
+	use({ "cormacrelf/dark-notify" })
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
